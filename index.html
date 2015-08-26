@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Responsive Tabbed List Example</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tabbed-component.css">
+    
+</head>
+<body>
+
+    <h1>Dynamic example</h1>
+
+    <div id="my-component" class="tabbed-component">
+
+        <nav class="tabbed-component__nav">
+            <a class="tabbed-component__nav-item active" href="http://content.guardianapis.com/search?api-key=9wur7sdh84azzazdt3ye54k4&show-fields=trailText&page-size=5&order-by=newest&section=uk-news">UK News</a>
+            <a class="tabbed-component__nav-item" href="http://content.guardianapis.com/search?api-key=9wur7sdh84azzazdt3ye54k4&show-fields=trailText&page-size=5&order-by=newest&section=football">Football</a>
+            <a class="tabbed-component__nav-item" href="http://content.guardianapis.com/search?api-key=9wur7sdh84azzazdt3ye54k4&show-fields=trailText&page-size=5&order-by=newest&section=travel">Travel</a>
+        </nav>
+
+        <ol class="tabbed-component__list">
+
+        </ol>
+
+    </div>
+
+    <h2>Static example</h2>
+
+    <div class="tabbed-component">
+
+        <nav class="tabbed-component__nav">
+            <a class="tabbed-component__nav-item active" href="">UK News</a>
+            <a class="tabbed-component__nav-item" href="">Football</a>
+            <a class="tabbed-component__nav-item" href="">Travel</a>
+        </nav>
+
+        <ol class="tabbed-component__list">
+
+            <li class="tabbed-component__list-item">
+                <h3><a href="#">Item 1</a></h3>
+                <p>Sub text</p>
+            </li>
+
+            <li class="tabbed-component__list-item">
+                <h3><a href="#">Item 2</a></h3>
+                <p>Sub text</p>
+            </li>
+
+        </ol>
+
+    </div>
+
+    <!-- including jQuery for cross-browser compatibility. Version 2 because IE6, 7 and 8 support is not required. -->
+    <script src="js/libs/jquery-2.1.4.min.js"></script>
+    <script src="js/libs/tabbed-component.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
